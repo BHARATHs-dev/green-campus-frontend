@@ -1,0 +1,113 @@
+.dashboard {
+  max-width: 1400px;
+}
+
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.dashboard__section {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.dashboard__section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.dashboard__section-subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.data-quality-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.data-quality-progress__item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.data-quality-progress__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.data-quality-progress__label {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.data-quality-progress__value {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.data-quality-progress__bar {
+  height: 8px;
+  background: var(--bg-muted);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.data-quality-progress__fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.data-quality-progress__fill--complete {
+  background: var(--healthy);
+}
+
+.data-quality-progress__fill--partial {
+  background: var(--warning);
+}
+
+.data-quality-progress__note {
+  font-size: 12px;
+  color: var(--text-muted);
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.dashboard__live-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.dashboard__live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--healthy);
+  display: inline-block;
+}

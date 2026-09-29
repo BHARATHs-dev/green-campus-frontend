@@ -1,0 +1,30 @@
+.tree-inventory {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tree-inventory .stats-grid {
+  margin-bottom: 24px;
+}
+
+.tree-drawer-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--warning-bg);
+  border: 1px solid var(--amber-200);
+  border-radius: var(--radius-md);
+  color: #78350f;
+  font-size: 13px;
+  line-height: 1.4;
+  margin-top: 16px;
+}
+
+.tree-drawer-warning svg {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+}

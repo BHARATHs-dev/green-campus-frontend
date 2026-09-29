@@ -1,0 +1,38 @@
+.vegetation {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.vegetation .stats-grid {
+  margin-bottom: 24px;
+}
+
+.vegetation .tab-content {
+  margin-bottom: 24px;
+}
+
+.condition-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.condition-badge--healthy {
+  background: var(--healthy-bg);
+  color: var(--emerald-700);
+}
+
+.condition-badge--moderate {
+  background: var(--warning-bg);
+  color: #78350f;
+}
+
+.condition-badge--severe {
+  background: var(--danger-bg);
+  color: var(--severe);
+}

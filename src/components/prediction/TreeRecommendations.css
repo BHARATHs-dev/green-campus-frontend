@@ -1,0 +1,280 @@
+/* Tree Recommendations for AGB Optimization Styles */
+
+.tree-recs-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-sm);
+  margin-top: 4px;
+}
+
+.tree-recs-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.tree-recs-card__title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tree-recs-card__icon-wrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  background: var(--emerald-50);
+  color: var(--emerald-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tree-recs-card__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.tree-recs-card__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 3px;
+}
+
+.tree-recs-card__subtitle {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.tree-recs-filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  background: var(--bg-muted);
+  padding: 3px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.tree-recs-filter-btn {
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.tree-recs-filter-btn:hover {
+  color: var(--text-primary);
+}
+
+.tree-recs-filter-btn--active {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.tree-recs-context-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: var(--emerald-50);
+  border: 1px solid var(--emerald-200);
+  color: var(--green-900);
+  font-size: 13px;
+  margin-bottom: 16px;
+  line-height: 1.45;
+}
+
+.tree-recs-context-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--emerald-600);
+  flex-shrink: 0;
+}
+
+.tree-recs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.tree-rec-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+
+.tree-rec-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--emerald-500);
+}
+
+.tree-rec-item__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.tree-rec-item__header-left {
+  flex: 1;
+}
+
+.tree-rec-item__name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.tree-rec-item__scientific {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--text-secondary);
+  display: block;
+  margin-top: 2px;
+}
+
+.tree-rec-item__badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  background: var(--green-100);
+  color: var(--green-900);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tree-rec-item__metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  background: var(--bg-muted);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+}
+
+.tree-rec-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tree-rec-metric__label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.tree-rec-metric__value {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.tree-rec-metric__value--co2 {
+  color: var(--teal-600);
+}
+
+.tree-rec-item__desc {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.tree-rec-item__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-light);
+}
+
+.tree-rec-tag {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.tree-rec-tag--rank {
+  background: var(--emerald-50);
+  color: var(--emerald-700);
+  border: 1px solid var(--emerald-200);
+}
+
+.tree-rec-tag--site {
+  background: var(--blue-100);
+  color: var(--blue-700);
+  border: 1px solid var(--blue-200);
+}
+
+.tree-recs-footer-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  background: var(--bg-muted);
+  border: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.tree-recs-footer-tip__icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .tree-recs-card {
+    padding: 16px;
+  }
+
+  .tree-recs-card__header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tree-recs-filter-group {
+    width: 100%;
+  }
+
+  .tree-recs-filter-btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .tree-recs-grid {
+    grid-template-columns: 1fr;
+  }
+}

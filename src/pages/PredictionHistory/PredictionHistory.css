@@ -1,0 +1,135 @@
+.prediction-history-page {
+  max-width: var(--container);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.prediction-history-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.prediction-history-header {
+  padding: var(--space-5);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.prediction-history-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.filter-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.prediction-history-stats {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.prediction-history-loading,
+.prediction-history-error,
+.prediction-history-empty {
+  padding: var(--space-8);
+  text-align: center;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge--success {
+  background: var(--healthy-bg);
+  color: var(--healthy);
+}
+
+.badge--warning {
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+
+/* Source tags */
+.source-tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.source-tag--manual {
+  background: var(--info-bg);
+  color: var(--info);
+}
+
+.source-tag--database {
+  background: var(--bg-muted);
+  color: var(--text-secondary);
+}
+
+/* Prediction value */
+.prediction-value {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--green-700);
+}
+
+.model-version {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .prediction-history-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .prediction-history-stats {
+    justify-content: center;
+    margin-top: var(--space-3);
+  }
+}
